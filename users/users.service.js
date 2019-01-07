@@ -17,11 +17,11 @@ async function authenticate({ username, password }) {
 }
 
 async function getAll() {
-  return await User.find().select('-hash');
+  return User.find().select('-hash');
 }
 
 async function getById(id) {
-  return await User.findById(id).select('-hash');
+  return User.findById(id).select('-hash');
 }
 
 async function create(userParam) {
@@ -62,7 +62,7 @@ async function update(id, userParam) {
   await user.save();
 }
 
-async function _delete(id) {
+async function remove(id) {
   await User.findByIdAndRemove(id);
 }
 
@@ -72,5 +72,5 @@ module.exports = {
   getById,
   create,
   update,
-  delete: _delete,
+  delete: remove,
 };
