@@ -1,0 +1,1117 @@
+{
+	"info": {
+		"_postman_id": "9338baec-2912-a3b5-562f-001004daa943",
+		"name": "Marmeladensaft",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Nominations",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1YzM2MWJhMDg1MmExODI3MjBjOWMwYTIiLCJpYXQiOjE1NDcwNDk4OTF9._r1PmvVaDAY9dtYAzvtMjk_rUCirGtAQwOFG8L84otw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "movieId",
+									"value": "277834",
+									"type": "text"
+								},
+								{
+									"key": "categoryId",
+									"value": "5c361e2d852a182720c9c0a8",
+									"type": "text"
+								},
+								{
+									"key": "ceremonyId",
+									"value": "5c33a07381ddc502dcff4632",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/nominations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"nominations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1YzM2MWJhMDg1MmExODI3MjBjOWMwYTIiLCJpYXQiOjE1NDcwNDk4OTF9._r1PmvVaDAY9dtYAzvtMjk_rUCirGtAQwOFG8L84otw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:4000/nominations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"nominations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1YzM2MWJhMDg1MmExODI3MjBjOWMwYTIiLCJpYXQiOjE1NDcwNDk4OTF9._r1PmvVaDAY9dtYAzvtMjk_rUCirGtAQwOFG8L84otw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:4000/nominations/5c361f16852a182720c9c0a9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"nominations",
+								"5c361f16852a182720c9c0a9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1YzM2MWJhMDg1MmExODI3MjBjOWMwYTIiLCJpYXQiOjE1NDcwNDk4OTF9._r1PmvVaDAY9dtYAzvtMjk_rUCirGtAQwOFG8L84otw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "movieId",
+									"value": "47166",
+									"type": "text"
+								},
+								{
+									"key": "categoryId",
+									"value": "5c361e2d852a182720c9c0a8",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "ceremonyId",
+									"value": "5c33a07381ddc502dcff4632",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/nominations/5c361f16852a182720c9c0a9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"nominations",
+								"5c361f16852a182720c9c0a9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1YzM2MWJhMDg1MmExODI3MjBjOWMwYTIiLCJpYXQiOjE1NDcwNDk4OTF9._r1PmvVaDAY9dtYAzvtMjk_rUCirGtAQwOFG8L84otw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "movieId",
+									"value": "47166",
+									"type": "text"
+								},
+								{
+									"key": "categoryId",
+									"value": "5c361e2d852a182720c9c0a8",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "ceremonyId",
+									"value": "5c33a07381ddc502dcff4632",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/nominations/5c361f16852a182720c9c0a9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"nominations",
+								"5c361f16852a182720c9c0a9"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ceremonies",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1YzM2MWJhMDg1MmExODI3MjBjOWMwYTIiLCJpYXQiOjE1NDcwNDk4OTF9._r1PmvVaDAY9dtYAzvtMjk_rUCirGtAQwOFG8L84otw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "number",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "eventDate",
+									"value": "01-01-01",
+									"type": "text"
+								},
+								{
+									"key": "host",
+									"value": "Peter",
+									"type": "text"
+								},
+								{
+									"key": "categories",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/ceremonies",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"ceremonies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1YzM2MWJhMDg1MmExODI3MjBjOWMwYTIiLCJpYXQiOjE1NDcwNDk4OTF9._r1PmvVaDAY9dtYAzvtMjk_rUCirGtAQwOFG8L84otw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:4000/ceremonies",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"ceremonies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1YzM2MWJhMDg1MmExODI3MjBjOWMwYTIiLCJpYXQiOjE1NDcwNDk4OTF9._r1PmvVaDAY9dtYAzvtMjk_rUCirGtAQwOFG8L84otw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:4000/ceremonies/5c361ce3852a182720c9c0a5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"ceremonies",
+								"5c361ce3852a182720c9c0a5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1YzM2MWJhMDg1MmExODI3MjBjOWMwYTIiLCJpYXQiOjE1NDcwNDk4OTF9._r1PmvVaDAY9dtYAzvtMjk_rUCirGtAQwOFG8L84otw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "number",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "eventDate",
+									"value": "01-01-01",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "host",
+									"value": "Peter Pan",
+									"type": "text"
+								},
+								{
+									"key": "categories",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/ceremonies/5c361ce3852a182720c9c0a5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"ceremonies",
+								"5c361ce3852a182720c9c0a5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1YzM2MWJhMDg1MmExODI3MjBjOWMwYTIiLCJpYXQiOjE1NDcwNDk4OTF9._r1PmvVaDAY9dtYAzvtMjk_rUCirGtAQwOFG8L84otw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "number",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "eventDate",
+									"value": "01-01-01",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "host",
+									"value": "Peter Pan",
+									"type": "text"
+								},
+								{
+									"key": "categories",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/ceremonies/5c361ce3852a182720c9c0a5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"ceremonies",
+								"5c361ce3852a182720c9c0a5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1YzM2MWJhMDg1MmExODI3MjBjOWMwYTIiLCJpYXQiOjE1NDcwNDk4OTF9._r1PmvVaDAY9dtYAzvtMjk_rUCirGtAQwOFG8L84otw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Best Picture",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Bestes Picture halt",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/categories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1YzM2MWJhMDg1MmExODI3MjBjOWMwYTIiLCJpYXQiOjE1NDcwNDk4OTF9._r1PmvVaDAY9dtYAzvtMjk_rUCirGtAQwOFG8L84otw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Best Picture",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Bestes Picture halt",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/categories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1YzM2MWJhMDg1MmExODI3MjBjOWMwYTIiLCJpYXQiOjE1NDcwNDk4OTF9._r1PmvVaDAY9dtYAzvtMjk_rUCirGtAQwOFG8L84otw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Best Picture",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Bestes Picture halt",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/categories/5c361e2d852a182720c9c0a8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"categories",
+								"5c361e2d852a182720c9c0a8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1YzM2MWJhMDg1MmExODI3MjBjOWMwYTIiLCJpYXQiOjE1NDcwNDk4OTF9._r1PmvVaDAY9dtYAzvtMjk_rUCirGtAQwOFG8L84otw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Best Picture",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "description",
+									"value": "Bestes Picture halt, nur geändert",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/categories/5c361e2d852a182720c9c0a8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"categories",
+								"5c361e2d852a182720c9c0a8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1YzM2MWJhMDg1MmExODI3MjBjOWMwYTIiLCJpYXQiOjE1NDcwNDk4OTF9._r1PmvVaDAY9dtYAzvtMjk_rUCirGtAQwOFG8L84otw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Best Picture",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Bestes Picture halt",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/categories/5a7ddad87e15d30d4442ca22",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"categories",
+								"5a7ddad87e15d30d4442ca22"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Authenticate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1YzM2MWJhMDg1MmExODI3MjBjOWMwYTIiLCJpYXQiOjE1NDcwNDk4OTF9._r1PmvVaDAY9dtYAzvtMjk_rUCirGtAQwOFG8L84otw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "doe",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "doe123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/users/authenticate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"users",
+								"authenticate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "doe",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "doe123",
+									"type": "text"
+								},
+								{
+									"key": "firstName",
+									"value": "John",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "Doe",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/users/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1YzM2MWEwMTg1MmExODI3MjBjOWMwYTEiLCJpYXQiOjE1NDcwNDk0OTF9.XXcLouVLCtvOQh-CZ1yjzJNhRS_ionXuxVUzXtgBB5I",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:4000/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Current",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1YzM2MWEwMTg1MmExODI3MjBjOWMwYTEiLCJpYXQiOjE1NDcwNDk0OTF9.XXcLouVLCtvOQh-CZ1yjzJNhRS_ionXuxVUzXtgBB5I",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:4000/users/current",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"users",
+								"current"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1YzM2MWEwMTg1MmExODI3MjBjOWMwYTEiLCJpYXQiOjE1NDcwNDk0OTF9.XXcLouVLCtvOQh-CZ1yjzJNhRS_ionXuxVUzXtgBB5I",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:4000/users/5c361a01852a182720c9c0a1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"users",
+								"5c361a01852a182720c9c0a1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1YzM2MWEwMTg1MmExODI3MjBjOWMwYTEiLCJpYXQiOjE1NDcwNDk0OTF9.XXcLouVLCtvOQh-CZ1yjzJNhRS_ionXuxVUzXtgBB5I",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "mdoe",
+									"type": "text"
+								},
+								{
+									"key": "firstName",
+									"value": "MJohn",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "MDoe",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/users/5c361a01852a182720c9c0a1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"users",
+								"5c361a01852a182720c9c0a1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1YzM2MWEwMTg1MmExODI3MjBjOWMwYTEiLCJpYXQiOjE1NDcwNDk0OTF9.XXcLouVLCtvOQh-CZ1yjzJNhRS_ionXuxVUzXtgBB5I",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "mdoe",
+									"type": "text"
+								},
+								{
+									"key": "firstName",
+									"value": "MJohn",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "MDoe",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/users/5c361a01852a182720c9c0a1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"users",
+								"5c361a01852a182720c9c0a1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
