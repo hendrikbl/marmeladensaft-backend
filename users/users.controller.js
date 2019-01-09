@@ -39,7 +39,7 @@ function update(req, res, next) {
     .catch(err => next(err));
 }
 
-function _delete(req, res, next) {
+function remove(req, res, next) {
   userService.delete(req.params.id)
     .then(() => res.json({}))
     .catch(err => next(err));
@@ -52,6 +52,6 @@ router.get('/', getAll);
 router.get('/current', getCurrent);
 router.get('/:id', getById);
 router.put('/:id', update);
-router.delete('/:id', _delete);
+router.delete('/:id', remove);
 
 module.exports = router;

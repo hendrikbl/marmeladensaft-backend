@@ -11,12 +11,12 @@ async function getById(id) {
 }
 
 async function create(params) {
-  const Category = new Category(params);
-  await Category.save();
+  const category = new Category(params);
+  await category.save();
 }
 
 async function update(id, params) {
-  const Category = await Category.findById(id);
+  const category = await Category.findById(id);
 
   if (!category) throw 'Category not found';
 

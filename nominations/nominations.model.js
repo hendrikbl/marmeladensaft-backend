@@ -5,7 +5,7 @@ const { Schema } = mongoose;
 const schema = new Schema({
   movieId: { type: String, required: true },
   categoryId: { type: String, required: true },
-  ceremonyId: { type: String, required: true }
+  ceremonyId: { type: String, required: true },
 });
 
 schema.set('toJSON', { virtuals: true });

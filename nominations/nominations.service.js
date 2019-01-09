@@ -11,7 +11,7 @@ async function getById(id) {
 }
 
 async function create(params) {
-  const Nomination = new Nomination(params);
+  const nomination = new Nomination(params);
   await nomination.save();
 }
 

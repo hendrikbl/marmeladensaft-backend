@@ -11,5 +11,5 @@ module.exports = {
   User,
   Ceremony,
   Category,
-  Nomination
+  Nomination,
 };
