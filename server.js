@@ -13,10 +13,11 @@ app.use(bodyParser.json());
 app.use(jwt());
 
 // api routes
-app.use('/users', require('./users/users.controller'));
 app.use('/categories', require('./categories/categories.controller'));
 app.use('/ceremonies', require('./ceremonies/ceremonies.controller'));
 app.use('/nominations', require('./nominations/nominations.controller'));
+app.use('/users', require('./users/users.controller'));
+app.use('/votes', require('./votes/votes.controller'));
 
 // global error handler
 app.use(errorHandler);

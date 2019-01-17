@@ -789,14 +789,7 @@
 					"name": "Authenticate",
 					"request": {
 						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1YzM2MWJhMDg1MmExODI3MjBjOWMwYTIiLCJpYXQiOjE1NDcwNDk4OTF9._r1PmvVaDAY9dtYAzvtMjk_rUCirGtAQwOFG8L84otw",
-									"type": "string"
-								}
-							]
+							"type": "noauth"
 						},
 						"method": "POST",
 						"header": [
@@ -1106,6 +1099,237 @@
 							"path": [
 								"users",
 								"5c361a01852a182720c9c0a1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Votes",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1YzM2MWJhMDg1MmExODI3MjBjOWMwYTIiLCJpYXQiOjE1NDcwNDk4OTF9._r1PmvVaDAY9dtYAzvtMjk_rUCirGtAQwOFG8L84otw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nominationId",
+									"value": "5c361f16852a182720c9c0a9",
+									"type": "text"
+								},
+								{
+									"key": "userId",
+									"value": "5c361ba0852a182720c9c0a2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/votes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"votes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1YzM2MWJhMDg1MmExODI3MjBjOWMwYTIiLCJpYXQiOjE1NDcwNDk4OTF9._r1PmvVaDAY9dtYAzvtMjk_rUCirGtAQwOFG8L84otw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:4000/votes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"votes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1YzM2MWJhMDg1MmExODI3MjBjOWMwYTIiLCJpYXQiOjE1NDcwNDk4OTF9._r1PmvVaDAY9dtYAzvtMjk_rUCirGtAQwOFG8L84otw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:4000/votes/5c40b645a050f7377c30a908",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"votes",
+								"5c40b645a050f7377c30a908"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1YzM2MWJhMDg1MmExODI3MjBjOWMwYTIiLCJpYXQiOjE1NDcwNDk4OTF9._r1PmvVaDAY9dtYAzvtMjk_rUCirGtAQwOFG8L84otw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nominationId",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "userId",
+									"value": "5c2ce4bc5b55db2e4443296a",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/votes/5c40b645a050f7377c30a908",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"votes",
+								"5c40b645a050f7377c30a908"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1YzM2MWJhMDg1MmExODI3MjBjOWMwYTIiLCJpYXQiOjE1NDcwNDk4OTF9._r1PmvVaDAY9dtYAzvtMjk_rUCirGtAQwOFG8L84otw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:4000/votes/5c40b645a050f7377c30a908",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"votes",
+								"5c40b645a050f7377c30a908"
 							]
 						}
 					},
