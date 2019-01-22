@@ -28,10 +28,15 @@ async function remove(id) {
   await Vote.findByIdAndRemove(id);
 }
 
+async function getByUser(id) {
+  return Vote.find({ userId: id });
+}
+
 module.exports = {
   getAll,
   getById,
   create,
   update,
   delete: remove,
+  getByUser,
 };

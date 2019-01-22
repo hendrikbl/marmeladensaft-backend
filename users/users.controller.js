@@ -2,6 +2,7 @@ const express = require('express');
 
 const router = express.Router();
 const userService = require('./users.service');
+const votesService = require('../votes/votes.service');
 
 function authenticate(req, res, next) {
   userService.authenticate(req.body)
@@ -45,6 +46,12 @@ function remove(req, res, next) {
     .catch(err => next(err));
 }
 
+function getVotes(req, res, next) {
+  votesService.getByUser(req.params.id)
+    .then(votes => res.json(votes))
+    .catch(err => next(err));
+}
+
 // routes
 router.post('/authenticate', authenticate);
 router.post('/register', register);
@@ -53,5 +60,6 @@ router.get('/current', getCurrent);
 router.get('/:id', getById);
 router.put('/:id', update);
 router.delete('/:id', remove);
+router.get('/:id/votes', getVotes);
 
 module.exports = router;
