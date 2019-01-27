@@ -28,10 +28,15 @@ async function remove(id) {
   await Nomination.findByIdAndRemove(id);
 }
 
+async function find(query) {
+  return Nomination.find(query);
+}
+
 module.exports = {
   getAll,
   getById,
   create,
   update,
   delete: remove,
+  find,
 };

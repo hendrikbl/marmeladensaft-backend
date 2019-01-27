@@ -1,17 +1,17 @@
 require('dotenv').config();
 const express = require('express');
 
-const app = express();
+const cookieParser = require('cookie-parser');
+const cors = require('cors');
 const bodyParser = require('body-parser');
 const jwt = require('./_helpers/jwt');
 const errorHandler = require('./_helpers/error-handler');
 
-app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-  next();
-});
+const app = express();
+const router = express.Router();
 
+app.use(cors());
+app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
@@ -19,11 +19,11 @@ app.use(bodyParser.json());
 app.use(jwt());
 
 // api routes
-app.use('/categories', require('./categories/categories.controller'));
-app.use('/ceremonies', require('./ceremonies/ceremonies.controller'));
-app.use('/nominations', require('./nominations/nominations.controller'));
-app.use('/users', require('./users/users.controller'));
-app.use('/votes', require('./votes/votes.controller'));
+app.use('/api/v1/categories', require('./categories/categories.controller'));
+app.use('/api/v1/ceremonies', require('./ceremonies/ceremonies.controller'));
+app.use('/api/v1/nominations', require('./nominations/nominations.controller'));
+app.use('/api/v1/users', require('./users/users.controller'));
+app.use('/api/v1/votes', require('./votes/votes.controller'));
 
 // global error handler
 app.use(errorHandler);
