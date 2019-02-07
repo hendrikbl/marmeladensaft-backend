@@ -12,9 +12,16 @@ async function isRevoked(req, payload, done) {
   done();
 }
 
+function getToken(req) {
+  if (req.cookies && req.cookies.token) {
+    return req.cookies.token;
+  }
+  return null;
+}
+
 function jwt() {
   const secret = process.env.APP_SECRET;
-  return expressJwt({ secret, isRevoked }).unless({
+  return expressJwt({ secret, isRevoked, getToken }).unless({
     path: [
       // public routes that don't require authentication
       '/api/v1/users/authenticate',

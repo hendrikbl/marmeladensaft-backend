@@ -6,7 +6,16 @@ const votesService = require('../votes/votes.service');
 
 function authenticate(req, res, next) {
   userService.authenticate(req.body)
-    .then(user => (user ? res.json(user) : res.status(400).json({ message: 'Username or password is incorrect' })))
+    .then((user) => {
+      if (user) {
+        res.cookie('token', user.token);
+        res.json(user);
+      } else {
+        res.status(400).json({ message: 'Username or password is incorrect' });
+      }
+
+      next();
+    })
     .catch(err => next(err));
 }
 
